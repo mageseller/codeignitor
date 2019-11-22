@@ -54,7 +54,7 @@
   <script>
     $(document).ready(function () {
       $(".copyButton").click(function () {
-        var text = $(this).parent().find('pre').html();
+        var text = $(this).parent().find('.copyCode').html();
         copyTextToClipboard(text);
         $(this).html('copied').css('color','red');
         setTimeout(() => {
